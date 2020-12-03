@@ -1,5 +1,4 @@
 # CryptoPy
-## Predicting crypto market prices and recommending buy/sell calls using Machine Learning.
 
 CryptoPy is a cryptocurrency-trading assistant that provides real-time price prediction using machine learning for a currency of user's choice and displays various technical indicators and a suitable trade signal (buy or sell) for the same. 
 
