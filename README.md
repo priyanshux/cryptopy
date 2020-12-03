@@ -1,13 +1,9 @@
-# cryptopy
-### Predicting crypto market prices and recommending buy/sell calls using Machine Learning.
-Disclaimer: For educational purposes only. Do not treat the project as financial advise.
+# CryptoPy
+## Predicting crypto market prices and recommending buy/sell calls using Machine Learning.
 
-<!--
-## About This Project
---> 
-<!--
-## Working
--->
+CryptoPy is a cryptocurrency-trading assistant that provides real-time price prediction using machine learning for a currency of user's choice and displays various technical indicators and a suitable trade signal (buy or sell) for the same. 
+
+_**Disclaimer: For educational purposes only. Do not treat the project as financial advise.**_
 
 ## To-do List
 
