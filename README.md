@@ -2,6 +2,8 @@
 
 CryptoPy is a cryptocurrency-trading assistant that provides real-time price prediction using machine learning for a currency of user's choice and displays various technical indicators and a suitable trade signal (buy or sell) for the same. 
 
+Please join our [Slack Workspace](https://join.slack.com/t/cryptopyworkspace/shared_invite/zt-jkgnyduf-cFCMvshdZAl_XqcKpm9jag)
+
 _**Disclaimer: For educational purposes only. Do not treat the project as financial advise.**_
 
 ## To-do List
