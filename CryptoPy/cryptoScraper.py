@@ -1,15 +1,18 @@
+# API used = Nomics
+
 import requests
-import json
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 
 
 url = 'https://api.nomics.com/v1/currencies/ticker'
 
+key = 'ENTER YOUR API KEY'
+Currency = 'BTC'
 
 
-#enter your api key from nomics in "key"
-#curreny symbols: 'BTC' for bitcoin, 'ETH' for ethereum, 'LTC' for litecoin and 'XRP' for ripple
-def getPrice(key, currencySymbol, interval = '1hr'):
+# enter your api key from nomics in "key"
+# curreny symbols: 'BTC' for bitcoin, 'ETH' for ethereum, 'LTC' for litecoin and 'XRP' for ripple
+def getPrice(key, currencySymbol, interval='1hr'):
     parameters = {
         'key': key,
         'ids': currencySymbol,
@@ -19,15 +22,13 @@ def getPrice(key, currencySymbol, interval = '1hr'):
 
     try:
         response = requests.get(url, params=parameters)
-        # print(response.json())
         data = response.json()
-        for dp in data:
-            price = dp["price"]
-            # print(dp["symbol"] + ': ' + price)
-        return price
+        price = [dp["price"] for dp in data]
+        return(', '.join(price))
 
     except (ConnectionError, Timeout, TooManyRedirects) as e:
         print(e)
 
-newPrice = getPrice(key = '2a106acc5e2e1abb424ae177ba6bf929', currencySymbol= 'BTC')
+
+newPrice = getPrice(key, Currency)
 print(newPrice)
